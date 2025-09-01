@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import About from './components/About/about';
 import Conatact from './components/Contact/contact';
 import Educations from './components/Educations/Educations';
@@ -8,6 +9,15 @@ import Porojects from './components/Projects/Porojects';
 import Skills from './components/Skills/Skills';
 
 function App() {
+    const [mount, setMount] = useState(false);
+    useEffect(() => {
+        if (!mount) {
+            setMount(true);
+        }
+    }, [mount]);
+    if(!mount){
+        return null;
+    }
 
     return (
         <div className="bg-[#e2f6ff] dark:bg-[#06010f]  transition-colors duration-300">

@@ -4,18 +4,15 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 import { FaDisplay } from 'react-icons/fa6';
 
 function ThemeButton() {
-    const { theme, setTheme, systemTheme } = useTheme();
+    const { setTheme } = useTheme();
     const [open, setOpen] = useState(false);
-    const getTheme = () => {
-        const currentTheme = theme === 'system' ? systemTheme : theme;
-
-        return currentTheme === 'dark' ? <FaMoon /> : <FaSun />;
-    };
     return (
         <div className="flex items-center gap-3 relative">
             {/* Toggle button */}
             <button onClick={() => setOpen(!open)} className="px-3 py-2 rounded bg-blue-200 dark:bg-gray-800">
-                {getTheme()}
+                {/* {getTheme()} */}
+                <FaSun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+                <FaMoon className="absolute top-2 h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
             </button>
             {/* Dropdown select */}
             {open && (
