@@ -9,14 +9,14 @@ function ThemeButton() {
     return (
         <div className="flex items-center gap-3 relative">
             {/* Toggle button */}
-            <button onClick={() => setOpen(!open)} className="px-3 py-2 rounded bg-blue-200 dark:bg-gray-800">
+            <button onClick={() => setOpen(!open)} className="px-3 py-2 rounded border">
                 {/* {getTheme()} */}
-                <FaSun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
-                <FaMoon className="absolute top-2 h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
+                <FaSun className="scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+                <FaMoon className="absolute top-2 scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
             </button>
             {/* Dropdown select */}
             {open && (
-                <div className="absolute top-6 right-0 mt-2 w-32 rounded-lg bg-gray-100 dark:bg-gray-800 shadow-lg">
+                <div className="absolute z-50 top-6 right-0 mt-2 w-32 rounded-lg bg-gray-100 dark:bg-gray-800 shadow-lg">
                     <button
                         onClick={() => {
                             setTheme('system');
