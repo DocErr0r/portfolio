@@ -35,7 +35,7 @@ const About = () => {
                             </a>
                         </div>
                         <div className="md:w-1/2 text-center md:text-left flex justify-center md:justify-end mt-8 md:mt-0">
-                            <Tilt className="w-48 h-48 sm:w-64 sm:h-64 md:w-[20rem] md:h-[20rem] border-4 rounded-full border-purple-400">
+                            <Tilt className="w-48 h-48 sm:w-64 sm:h-64 md:w-[20rem] md:h-[20rem] border-4 rounded-full border-purple-400" tiltMaxAngleX={20} tiltMaxAngleY={20}  gyroscope={true} transitionSpeed={1000} scale={1.05}>
                                 <img src={'https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D'} alt="profile_image" className=" h-full w-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]" />
                             </Tilt>
                         </div>
