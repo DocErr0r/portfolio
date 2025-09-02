@@ -60,7 +60,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile menu */}
-            <div className={`md:hidden w-full border-b-1 border-gray-700 text-center uppercase transition-all duration-400 ease-in-out ${menuOpen ? 'h-fit left-0 opacity-100' : 'h-0 -left-[999px] opacity-0'}`}>
+            <div className={`md:hidden w-full border-b-1 border-gray-700 text-center uppercase transition-all duration-400 ease-in-out overflow-hidden ${menuOpen ? 'h-fit left-0 opacity-100' : 'h-0 -left-[999px] opacity-0 pointer-events-none'}`}>
                 <div className="">
                     {navItems.map((item, i) => (
                         <a
