@@ -27,7 +27,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="relative overflow-hidden">
+        <div id="contact" className="relative overflow-hidden">
             <div className="px-4 py-12  relative z-10">
                 <h2 className="text-3xl font-bold text-center mb-2 text-gray-800 dark:text-white">
                     <span className="border-b-3 border-purple-600">Contact</span>

@@ -3,8 +3,8 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
     return (
-        <div className="font-sans relative overflow-hidden">
-            <div className=" px-4 py-12 relative z-10 bg-skill clipPath-y">
+        <div id="projects" className="font-sans relative overflow-hidden">
+            <div className=" px-4 py-12 relative z-10 bg-skill clipPath-y pb-[7rem]">
                 <h2 className="text-3xl font-bold text-center mb-2 text-gray-800 dark:text-white">
                     <span className="border-b-3 border-purple-600">Projects</span>
                 </h2>
@@ -17,7 +17,7 @@ const Projects = () => {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full md:w-1/2 h-64 object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none"
+                                    className="w-full md:w-1/2 p-3 md:h-64 h-[40%] object-cover rounded-t-2xl md:rounded-2xl md:rounded-tr-none"
                                     onError={(e) => {
                                         e.target.style.display = 'none';
                                     }}

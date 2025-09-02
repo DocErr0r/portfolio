@@ -16,6 +16,10 @@ const Navbar = () => {
     const linkClick = (itemid) => {
         setMenuOpen(false);
         setActiveLink(itemid);
+        const element = document.getElementById(itemid);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
     };
     console.log(activeLink)
     return (

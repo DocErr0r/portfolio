@@ -3,7 +3,7 @@ import { FaCalendarAlt, FaMapMarkerAlt, FaBuilding } from 'react-icons/fa';
 
 const Experience = () => {
     return (
-        <div className="relative font-sans overflow-hidden">
+        <div id="experience" className="relative font-sans overflow-hidden">
             <div className="px-4 py-12  z-10">
                 <h2 className="text-3xl font-bold text-center mb-2 text-gray-800 dark:text-white">
                     <span className="border-b-3 border-purple-600">Experience</span>

@@ -44,15 +44,11 @@ import csharpLogo from './assets/tech_logo/csharp.png';
 // import vpsLogo from './assets/education_logo/vps_logo.png';
 
 // Project Section Logo's
-// import githubdetLogo from './assets/work_logo/github_det.png';
-// import csprepLogo from './assets/work_logo/cs_prep.png';
-// import movierecLogo from './assets/work_logo/movie_rec.png';
-// import taskremLogo from './assets/work_logo/task_rem.png';
-// import npmLogo from './assets/work_logo/npm.png';
-// import webverLogo from './assets/work_logo/web_dig.png';
-// import cmLogo from './assets/work_logo/cm.png';
-// import imagesearchLogo from './assets/work_logo/image_search.png';
-// import removebgLogo from './assets/work_logo/remove_bg.png';
+import airbnbimage from './assets/projects/airbbnb.png'
+import codeEditor from './assets/projects/codeEditor.png'
+import eshop from './assets/projects/eshop.png'
+import muiskweb from './assets/projects/musikweb.png'
+
 import ProfilePic from './assets/profilePic.jpg'
 export const profilePic = ProfilePic;
 
@@ -140,36 +136,47 @@ export const experiences = [
 export const projects = [
   {
     id: 0,
+    title: "Syntax-Squad - Real-time Code Editor",
+    duration: "oct 2024 – Mar 2025",
+    techStack: ["React.js", "Socket IO"],
+    description:
+      "Syntax-Squad is a real-time collaborative code editor with live multi-user editing and video calls, ideal for remote pair programming and interviews. Built with React.js, Node.js, Socket.io, and Zegocloud, it features syntax highlighting, room-based sessions, and secure real-time syncing. Collaborated in a team environment to deliver a scalable and production-ready solution.",
+    link: null, // no live demo given in resume
+    github: "https://github.com/DocErr0r/Syntax-Squad-A-Socket.io-Code-Editor",
+    image: codeEditor
+  },
+  {
+    id: 1,
     title: "Airbnb Clone",
     duration: "Mar 2024 – May 2024",
     techStack: ["Next.js", "MongoDB"],
     description:
       "Engineered a full-stack Airbnb-style platform with responsive property listings and booking workflows. Implemented RESTful APIs for authentication, listings, and reservations, ensuring a smooth user experience. Collaborated in a team environment to deliver a scalable and production-ready solution.",
     link: null, // no live demo given in resume
-    github: "https://github.com/docerr0r/airbnb-clone",
-    image: "/images/projects/airbnb-clone.png"
+    github: "https://github.com/DocErr0r/Airbnb_Fullstack_NextJS",
+    image: airbnbimage
   },
   {
-    id: 1,
+    id: 2,
     title: "E-commerce Platform",
     duration: "Jun 2024 – Sep 2024",
     techStack: ["ReactJS", "Node.js", "Express.js", "JWT", "Tailwind CSS", "MongoDB"],
     description:
       "Developed a full-stack e-commerce application featuring secure JWT-based authentication and role-based access control. Designed and implemented a complete shopping experience with product CRUD operations, a dynamic cart system, and PayPal payment integration for order processing. Focused on performance, usability, and scalability to deliver a professional-grade platform.",
     link: "https://eshop-net.netlify.app",
-    github: "https://github.com/docerr0r/ecommerce-platform",
-    image: "/images/projects/ecommerce-platform.png"
+    github: "https://github.com/DocErr0r/E-commerce-mernStack",
+    image: eshop
   },
   {
-    id: 2,
+    id: 3,
     title: "Music Web Application",
     duration: "Jan 2024 – Mar 2024",
     techStack: ["ReactJS", "Jio Saavn API"],
     description:
       "Created a modern music discovery web app using ReactJS and Jio Saavn API, enabling real-time fetching of tracks, albums, and artwork. Designed a mobile-first, dark-themed UI to enhance engagement and improve usability. Optimized API consumption and UI performance to provide a seamless music browsing experience.",
     link: "https://musik-web.netlify.app",
-    github: "https://github.com/docerr0r/music-web-app",
-    image: "/images/projects/music-web.png"
+    github: "https://github.com/DocErr0r/MusikWeba",
+    image: muiskweb
   }
 ];
 
