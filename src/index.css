@@ -13,6 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 @theme {
+    --breakpoint-xs: 24rem;
     --bg-skill: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0.15) 50%), linear-gradient(147.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
 }
 
@@ -20,5 +21,5 @@ html {
     background-image: var(--bg-skill);
 }
 @utility clipPath-y {
-   clip-path:polygon(0 0,100% 0,100% 98%,75% 95%,0 100%)
+   clip-path:polygon(0 0,100% 0,100% 98%,68% 95%,0 100%)
 }

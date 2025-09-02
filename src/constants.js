@@ -53,6 +53,8 @@ import csharpLogo from './assets/tech_logo/csharp.png';
 // import cmLogo from './assets/work_logo/cm.png';
 // import imagesearchLogo from './assets/work_logo/image_search.png';
 // import removebgLogo from './assets/work_logo/remove_bg.png';
+import ProfilePic from './assets/profilePic.jpg'
+export const profilePic = ProfilePic;
 
 
 export const SkillsInfo = [
@@ -86,6 +88,18 @@ export const SkillsInfo = [
     ],
   },
   {
+    title: 'Languages',
+    skills: [
+      { name: 'JavaScript', logo: javascriptLogo },
+      { name: 'TypeScript', logo: typescriptLogo },
+      { name: 'C', logo: cLogo },
+      { name: 'C++', logo: cppLogo },
+      { name: 'Java', logo: javaLogo },
+      { name: 'Python', logo: pythonLogo },
+      // { name: 'C-Sharp', logo: csharpLogo },
+    ],
+  },
+  {
     title: 'Tools',
     skills: [
       { name: 'Git', logo: gitLogo },
@@ -96,18 +110,6 @@ export const SkillsInfo = [
       { name: 'Vercel', logo: vercelLogo },
       // { name: 'Netlify', logo: netlifyLogo },
       // { name: 'Figma', logo: figmaLogo },
-    ],
-  },
-  {
-    title: 'Languages',
-    skills: [
-      { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'TypeScript', logo: typescriptLogo },
-      { name: 'C', logo: cLogo },
-      { name: 'C++', logo: cppLogo },
-      { name: 'Java', logo: javaLogo },
-      { name: 'Python', logo: pythonLogo },
-      // { name: 'C-Sharp', logo: csharpLogo },
     ],
   },
 ];
@@ -128,10 +130,8 @@ export const experiences = [
       "JavaScript",
       "React JS",
       "TypeScript",
-      "Node JS",
-      "Tailwind CSS",
+      "Material UI",
       "MongoDb",
-      "Redux",
       "Next Js",
     ],
   }
@@ -139,78 +139,78 @@ export const experiences = [
 
 export const projects = [
   {
-    id:0,
+    id: 0,
     title: "Airbnb Clone",
     duration: "Mar 2024 – May 2024",
     techStack: ["Next.js", "MongoDB"],
     description:
-      "Developed an Airbnb-inspired web application with responsive UI layouts for property listings and booking workflows. I created RESTful APIs for authentication, listings, and bookings while collaborating with a team to deliver a scalable and user-friendly platform.",
+      "Engineered a full-stack Airbnb-style platform with responsive property listings and booking workflows. Implemented RESTful APIs for authentication, listings, and reservations, ensuring a smooth user experience. Collaborated in a team environment to deliver a scalable and production-ready solution.",
     link: null, // no live demo given in resume
-    github: "https://github.com/docerr0r/airbnb-clone", // you can replace with correct repo
+    github: "https://github.com/docerr0r/airbnb-clone",
     image: "/images/projects/airbnb-clone.png"
   },
   {
-    id:1,
+    id: 1,
     title: "E-commerce Platform",
     duration: "Jun 2024 – Sep 2024",
     techStack: ["ReactJS", "Node.js", "Express.js", "JWT", "Tailwind CSS", "MongoDB"],
     description:
-      "Built a full-stack e-commerce platform featuring JWT-based authentication and role-based access control. I implemented CRUD operations, a shopping cart system, and integrated PayPal for secure payment processing. The platform delivers a smooth and seamless shopping experience for users.",
+      "Developed a full-stack e-commerce application featuring secure JWT-based authentication and role-based access control. Designed and implemented a complete shopping experience with product CRUD operations, a dynamic cart system, and PayPal payment integration for order processing. Focused on performance, usability, and scalability to deliver a professional-grade platform.",
     link: "https://eshop-net.netlify.app",
-    github: "https://github.com/docerr0r/ecommerce-platform", // replace with correct repo
+    github: "https://github.com/docerr0r/ecommerce-platform",
     image: "/images/projects/ecommerce-platform.png"
   },
   {
-    id:2,
+    id: 2,
     title: "Music Web Application",
     duration: "Jan 2024 – Mar 2024",
     techStack: ["ReactJS", "Jio Saavn API"],
     description:
-      "Created a music web application using ReactJS and the Jio Saavn API to fetch song details and album art. The app was designed with a mobile-first, dark-themed interface, which improved user engagement by 20% compared to a standard design.",
+      "Created a modern music discovery web app using ReactJS and Jio Saavn API, enabling real-time fetching of tracks, albums, and artwork. Designed a mobile-first, dark-themed UI to enhance engagement and improve usability. Optimized API consumption and UI performance to provide a seamless music browsing experience.",
     link: "https://musik-web.netlify.app",
-    github: "https://github.com/docerr0r/music-web-app", // replace with correct repo
+    github: "https://github.com/docerr0r/music-web-app",
     image: "/images/projects/music-web.png"
   }
 ];
 
 
-  
-  // export const education = [
-  //   {
-  //     id: 0,
-  //     img: glaLogo,
-  //     school: "GLA University, Mathura",
-  //     date: "Sept 2022 - July 2024",
-  //     grade: "7.81 CGPA",
-  //     desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-  //     degree: "Master of Computer Applications - MCA",
-  //   },
-  //   {
-  //     id: 1,
-  //     img: bsaLogo,
-  //     school: "BSA College, Mathura",
-  //     date: "Sept 2018 - Aug 2021",
-  //     grade: "73.2%",
-  //     desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-  //     degree: "Bachelor of Science - BSC (Computer Science)",
-  //   },
-  //   {
-  //     id: 2,
-  //     img: vpsLogo,
-  //     school: "Vatsalya Public School Govardhan, Mathura",
-  //     date: "Apr 2017 - March 2018",
-  //     grade: "78%",
-  //     desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-  //     degree: "CBSE(XII) - PCM with Computer Science",
-  //   },
-  //   {
-  //     id: 3,
-  //     img: vpsLogo,
-  //     school: "Vatsalya Public School Govardhan, Mathura",
-  //     date: "Apr 2015 - March 2016",
-  //     grade: "87.5%",
-  //     desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-  //     degree: "CBSE(X), Science with Computer Application",
-  //   },
-  // ];
- 
+
+
+// export const education = [
+//   {
+//     id: 0,
+//     img: glaLogo,
+//     school: "GLA University, Mathura",
+//     date: "Sept 2022 - July 2024",
+//     grade: "7.81 CGPA",
+//     desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
+//     degree: "Master of Computer Applications - MCA",
+//   },
+//   {
+//     id: 1,
+//     img: bsaLogo,
+//     school: "BSA College, Mathura",
+//     date: "Sept 2018 - Aug 2021",
+//     grade: "73.2%",
+//     desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
+//     degree: "Bachelor of Science - BSC (Computer Science)",
+//   },
+//   {
+//     id: 2,
+//     img: vpsLogo,
+//     school: "Vatsalya Public School Govardhan, Mathura",
+//     date: "Apr 2017 - March 2018",
+//     grade: "78%",
+//     desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
+//     degree: "CBSE(XII) - PCM with Computer Science",
+//   },
+//   {
+//     id: 3,
+//     img: vpsLogo,
+//     school: "Vatsalya Public School Govardhan, Mathura",
+//     date: "Apr 2015 - March 2016",
+//     grade: "87.5%",
+//     desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
+//     degree: "CBSE(X), Science with Computer Application",
+//   },
+// ];

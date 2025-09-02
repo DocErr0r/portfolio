@@ -2,7 +2,7 @@ import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-      <footer className="bg-[#bbe6fc] dark:bg-[#0f0b1b] py-8 mt-10">
+      <footer className="bg-[#bbe6fc] dark:bg-[#0f0b1b] py-8">
           <div className="max-w-4xl mx-auto px-4 text-center">
               <p className="text-gray-600 dark:text-gray-400 mb-4">Connect with me on social media</p>
               <div className="flex justify-center space-x-6">

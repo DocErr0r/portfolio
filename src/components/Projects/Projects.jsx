@@ -3,35 +3,16 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
     return (
-        <div className="px-4 py-12 font-sans relative overflow-hidden">
-            {/* Polygon background pattern */}
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-100 via-purple-50 to-white dark:from-purple-900 dark:via-purple-800 dark:to-gray-900">
-                <div className="absolute inset-0 opacity-10 dark:opacity-20">
-                    <svg width="100%" height="100%" className="absolute inset-0">
-                        <defs>
-                            <pattern id="polygon-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                                <polygon points="50,0 100,25 100,75 50,100 0,75 0,25" fill="none" stroke="currentColor" strokeWidth="1" className="text-purple-300 dark:text-purple-600"/>
-                            </pattern>
-                        </defs>
-                        <rect width="100%" height="100%" fill="url(#polygon-pattern)"/>
-                    </svg>
-                </div>
-            </div>
-
-            <div className="relative z-10">
+        <div className="font-sans relative overflow-hidden">
+            <div className=" px-4 py-12 relative z-10 bg-skill clipPath-y">
                 <h2 className="text-3xl font-bold text-center mb-2 text-gray-800 dark:text-white">
                     <span className="border-b-3 border-purple-600">Projects</span>
                 </h2>
                 <h3 className="text-gray-400 text-lg font-semibold text-center mb-8">A showcase of my work</h3>
 
-                <div className="flex flex-col space-y-12 py-2 px-4 sm:px-12 md:px-16">
+                <div className="flex flex-col space-y-12 py-2 mb-6 pb-8 px-4 sm:px-12 md:px-16">
                     {projects.map((project, index) => (
-                        <div
-                            key={project.id}
-                            className={`flex flex-col md:flex-row items-center rounded-2xl border shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] bg-white dark:bg-gray-800 transition-transform duration-300 ${
-                                index % 2 === 1 ? 'md:flex-row-reverse' : ''
-                            }`}
-                        >
+                        <div key={project.id} className={`flex flex-col md:flex-row items-center rounded-2xl shadow-[0_0_20px_10px_rgba(130,69,236,0.3)] bg-white dark:bg-gray-800 transition-transform duration-300 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                             {project.image && (
                                 <img
                                     src={project.image}
@@ -47,10 +28,7 @@ const Projects = () => {
                                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{project.duration}</p>
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.techStack.map((tech, idx) => (
-                                        <span
-                                            key={idx}
-                                            className="text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full"
-                                        >
+                                        <span key={idx} className="text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full">
                                             {tech}
                                         </span>
                                     ))}
@@ -58,23 +36,13 @@ const Projects = () => {
                                 <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 flex-grow">{project.description}</p>
                                 <div className="flex gap-4">
                                     {project.github && (
-                                        <a
-                                            href={project.github}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
-                                        >
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 dark:text-gray-300 border px-3 py-1 rounded-2xl hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
                                             <FaGithub size={18} />
-                                            <span className="text-sm">Code</span>
+                                            <span className="text-sm">Repository</span>
                                         </a>
                                     )}
                                     {project.link && (
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
-                                        >
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border px-3 py-1 rounded-2xl text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
                                             <FaExternalLinkAlt size={18} />
                                             <span className="text-sm">Live</span>
                                         </a>

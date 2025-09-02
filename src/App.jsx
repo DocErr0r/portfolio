@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import About from './components/About/about';
-import Contact from './components/Contact/Contact'
+import Contact from './components/Contact/Contact';
 import Educations from './components/Educations/Educations';
 import Experience from './components/Experiences/Experience';
 import Footer from './components/Footer/Footer';
@@ -9,6 +9,8 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 
 import DotGrid from './components/animation/Dotgrid';
+import ScrollAnimate from './utils/ScrollAnimation';
+import Layout from './components/Layout/Layout';
 
 function App() {
     const [mount, setMount] = useState(false);
@@ -17,7 +19,7 @@ function App() {
             setMount(true);
         }
     }, [mount]);
-    if(!mount){
+    if (!mount) {
         return null;
     }
 
@@ -29,12 +31,26 @@ function App() {
             {/* <div className="absolute inset-0 bg-gradient-to-br from-[#cceafdbc] dark:from-[#4f4f4f2e] to-transparent-[1px] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_0%,#000_70%,transparent_100%)]"></div> */}
             <div className="pt-15">
                 <Navbar />
-                <About />
-                <Skills />
-                <Experience />
-                <Projects />
-                {/* <Educations /> */}
-                <Contact />
+                <ScrollAnimate animation="fade-up">
+                    <About />
+                </ScrollAnimate>
+                <Layout>
+                    <ScrollAnimate animation="fade-up">
+                        <Skills />
+                    </ScrollAnimate>
+                    <ScrollAnimate animation="fade-up">
+                        <Experience />
+                    </ScrollAnimate>
+                    {/* <ScrollAnimate animation="fade-up">
+                    <Educations />
+                    </ScrollAnimate> */}
+                    <ScrollAnimate animation="fade-up">
+                        <Projects />
+                    </ScrollAnimate>
+                    <ScrollAnimate animation="fade-up">
+                        <Contact />
+                    </ScrollAnimate>
+                </Layout>
                 <Footer />
             </div>
         </div>
