@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import About from './components/About/about';
+import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Educations from './components/Educations/Educations';
 import Experience from './components/Experiences/Experience';
